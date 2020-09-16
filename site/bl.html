@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta name="keywords"  content="北京森泰英睿传媒科技有限公司" />
+    <title>北京森泰英睿传媒科技有限公司</title>
+    <link rel="stylesheet" href="./css/layui.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/swiper_min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    /* .layui-nav .layui-nav-mored{
+        border-color: transparent transparent black !important;
+    }
+    .layui-nav .layui-nav-more{
+        border-top-color: black !important;
+    } */
+    .wchat{
+        width: 300px;
+        height: 210px;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        opacity: 0;
+        z-index: 9999;
+        /* border: 1px red solid; */
+    }
+    .top{
+        width: 95px;
+        height: 95px;
+        background: #ff2931;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px red solid; */
+        color: white;
+    }
+    .ham{
+        width: 300px;
+        height: 95px;
+        /* border: 1px red solid; */
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+    .glo{
+        width: 190px;
+        height: 95px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px red solid; */
+        background: white;
+        border: 1px white solid;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .2);
+        border-radius: 9px;
+
+        opacity: 0;
+    }
+    
+    .glo p{
+        margin-left: 6px;
+    }
+    .glo h2{
+        margin-top: 12px;
+        font-size: 20px;
+        font-weight: 900;
+        color:#ff2931;
+        margin-left: 6px;
+    }
+    .ha{
+        width: 95px;
+        height: 95px;
+        background: #ff2931;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        color: white;
+        /* margin-top: 15px; */
+    }
+    .wchat img{
+        width: 35px;
+    }
+    .wchat p{
+        font-size: 16px;
+       
+        margin-top: 6px;
+    } 
+    .product{
+        width: 100%;
+    }
+    .pro_ct{
+        width: 75%;
+        margin: 0 auto;
+        height: 800px;
+    }
+    .pro_ct h2{
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+
+    }
+    .pro_ct ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .pro_ct ul li{
+        width:30%;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pro_ct ul img{
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    .pro_ct ul div{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+    }
+    .pro_ct div h3{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+
+    }
+    .pro_ct div p{
+        font-size: 16px;
+    }
+    .tx{
+        width: 100%;
+        height: 285px;
+        background: #091928;
+    }
+    .tx_ct{
+        width: 75%;
+        height: 285px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .tx_ct img{
+        width: 800px;
+        height: 500px;
+        position: absolute;
+        top: -9%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .morg{
+        height: 800px;
+        background: white;
+
+    }
+    .morg1{
+        height: 800px;
+    }
+    .jie_ct{
+        height: 800px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .handdle{
+        width: 180px;
+        height: 50px;
+        border: 1px white solid;
+        background: red;
+        border-radius: 26px;
+        display: flex;
+        margin: 23px auto;
+    }
+    .handdle p{
+        width: 60%;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    </style>
+
+</head>
+<body>
+
+   
+    <div class="wchat">
+        <div class="top">
+            <img src="./img/index/wchat.png"/>
+            <p>微信公众号</p>
+        </div>
+        <div class="ham">
+            <div class="ha">
+            <img src="./img/index/hugyjn.png"/>
+            <p>电话咨询</p>
+        </div>
+        <div class="glo">
+            <p>全国热线</p>
+            <h2>010-8292164321</h2>
+        </div>
+        </div>
+        
+    </div>
+    
+
+
+    <ul class="layui-nav" lay-filter="">
+        <div class="photo">
+           <img src="./img/logo.png"/>
+        </div>
+
+        <div class="lit">
+        <li class="layui-nav-item layui-this"><a href="./index.html">首页</a></li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">解决方案</a>
+          <dl class="layui-nav-child"> <!-- 二级菜单 -->
+            <dd><a href="./mesu.html">智慧博物馆</a></dd>
+            <dd><a href="./tra.html">智慧文旅文化</a></dd>
+            <dd><a href="./guid.html">智慧导览系统</a></dd>
+            <dd><a href="./tafe.html">田野文物安全</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item "><a href="./case.html">经典案例</a></li>
+        <li class="layui-nav-item"><a href="./help.html">新闻资讯</a></li>
+        
+        <li class="layui-nav-item"><a href="./abt.html">关于我们</a></li>
+        </div>
+    
+      </ul>
+
+ 
+       
+    <div class="big">
+     <div class="phot">
+         <div class="phone">
+            <img src="./img/index/line.png">
+            <div class="font">
+          <p>打造智慧文博生态圈</p>
+          <h2>智慧引领 技术创新</h2>
+          <p>理念创新  / 勤于思考 / 实在耕耘 / 科技先导</p>
+          <div class="handdle">
+              <p ><img style="width: 15px; height: 15px; margin-right: 8px;" src="./img/rightarro.png"/><span style="font-size: 16px;">公司简介</span></p>  
+          </div>
+        
+      </div>
+       </div>
+     </div>
+      
+     <div class="propa" style="width: 100%; height: 100%;" >
+         <video style=" width:100%;height: 100%;object-fit: fill" src="./img/propa.mp4" id="myvideo" ></video>
+     </div>
+       
+   <div class="product">
+       <div class="pro_ct">
+           
+
+        <h2>我们<span style="display: inline-block;border-bottom: 3px red solid; padding-bottom: 6px;">产品</span>特点</h2>
+         <ul>
+             <li>
+                 <img src="./img/zhuan.png"/>
+                 <div>
+                     <h3>现代化设计</h3>
+                     <p>采用现代化机器承载设备，方便操作简单易用，后期维护更新快，故障率低。</p>
+                 </div>
+             </li>
+
+             <li>
+                <img src="./img/tre.png"/>
+                <div>
+                    <h3>多领域应用</h3>
+                    <p>集智慧博物馆、智慧文旅、田野文物保护、大数据采集与输出等各项专业服务于一体,整合各类信息资源，线上线下相结合，打造文博领域生态圈。</p>
+                </div>
+             </li>
+
+             <li>
+                 <img src="./img/arrol.png"/>
+                 <div>
+                     <h3>智能操作</h3>
+                     <p>建设"智慧导览系统"，”票务管理系统"、"客流监测管理系统"、"智慧导览系统"、"智慧停车管理系统"、"博物馆网站"、给你带来全新的智慧化体验。</p>
+                 </div>
+             </li>
+         </ul>  
+       
+        </div> 
+        <div class="tx">
+            <div class="tx_ct">
+                <img src="./img/comuh.png"/>
+            </div>
+        </div>
+   </div>
+
+
+   
+    <div class="jie" style="position: relative;"> 
+        <div id="particles-js" style="position: absolute; right: 0;"></div>
+           <div class="jie_c  " style=" width: 100%;">
+               <h2>解<span style="display: inline-block; border-bottom: 3px red solid; padding-bottom: 6px;">决方</span>案</h2> 
+              
+               <div class="dao" style="justify-content: center;">
+                   <div class="lt1"></div>
+                   <div class="left">
+                       <h3>"e导览"智慧导览</h3>
+                       <p>综合应用多种现代化科学技术;以观众为主体、以助力博物馆实现服务观众数量最大化以及智慧化为目标;在租赁、导览、数据提供等多方面领先的与创新的新一代智慧导览系统。</p>
+                       <div class="ra" style="float: left;">
+                        <a href="#">more</a>
+                        <img src="./img/index/ar.png"/>
+                    </div>
+                    </div>
+
+                   <div class="right">
+                       <img src="./img/index/iPhone.png"/>
+                   </div>
+
+                   <div class="ri2"></div>
+               </div>
+           </div>
+          
+       </div>
+
+       <div class="jie morg">
+        <div class="jie_c jie_ct">
+        
+            <div class="dao"> 
+                
+                <div class="right">
+                    <img src="./img/index/docuble.png"/>
+                </div>
+                <div class="left">
+                    <h3>智慧博物馆</h3>
+                    <p>运用智能传感、物联网、云计算、大数据、移动通讯等信息技术，搭建信息化基础平台，构建博物馆各要素之间的双向多元的信息交互和远程控制与管理，提升博物馆文物保护、研究、管理和公众服务的能力，为博物馆全面实现智慧化提供一站式解决方案。</p>
+                    
+                    <div class="ra">
+                        <a href="#">more</a>
+                        <img src="./img/index/ar.png"/>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="jie morg1" >
+        <div class="jie_c jie_ct">
+            <div class="dao">
+                <div class="left">
+                    <h3>智慧文旅平台</h3>
+                    <p>采用全数字高清网络摄像头，结合智能导播技术，实现全天候实时直播景区风景，监控景区安全。</p>
+                    <div class="ra" style="float: left;">
+                        <a href="#">more</a>
+                        <img src="./img/index/ar.png"/>
+                    </div>
+                </div>
+                <div class="right">
+                    <img style="margin-left: 32px;" src="./img/index/secon.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jie morg" style="position: relative;">
+        <canvas id="my_canvas" width="400" height="400" style="position: absolute; width: 300px; height: 600px; left: 0; z-index: 0;"></canvas>
+        <div class="jie_c jie_ct">
+            <div class="dao" >
+                <div class="ri1"></div>   
+                <div class="right">
+                    <img src="./img/index/byg.png"/>
+                </div>
+                <div class="left">
+                    <h3>田野文物安全平台建设系统</h3>
+                    <p>采用适合野外工作的4G、5G 网络传输信号，配合高清智能视频设备及地波微触动探测技术，报警联动，实现对遗址区全方位安全监测与保护。</p>
+                    <div class="ra">
+                        <a href="#">more</a>
+                        <img src="./img/index/ar.png"/>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jie">
+        <div class="jie_c">
+            <h2>最<span style="display: inline-block; border-bottom:3px red solid; padding-bottom:6px">新消</span>息</h2>
+            <div class="dao" style="align-items: stretch; margin-top: 160px;">
+                <div class="left">
+                    <h3>北京森泰英睿签约二里头夏都遗址博物馆</h3>
+                    <p style="font-size: 13px;">发布时间:2019-05-17</p>
+                    <p>二里头夏都遗址博物馆项目占地208亩，建设规模3.1万平方米，总投资6.3亿元，计划于2019年10月建成，届时将成为全国大遗址保护、展示和利用的示范区，中国早期国家形成和发展研究展示中心，商周断代工程和中华文明探源工程研究、展示基地，在文博行业具有里程碑式的的意义------</p>
+                    <div class="ra" style="float: left;">
+                        <a href="#">more</a>
+                        <img src="./img/index/ar.png"/>
+                    </div>
+                </div>
+                <div class="right" style="width: 500px; height: 120px; border-radius: 15px; position: relative;">
+                    <!-- <img src="./img/index/iPhone.png"/> -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/pht/tp1.png"/></div>
+                          <div class="swiper-slide"><img src="./img/pht/tp2.png"/></div>
+                          <div class="swiper-slide"><img src="./img/pht/tp3.png"/></div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="myContent">
+        <div class="myC-t">
+ 
+ 
+ 
+ 
+ 
+         <div class="my-r">
+                <ul>
+             <li style="margin-left: -9px;"><p>首页</p>  <span></span></li>
+            
+             <li><p>解决方案</p> <span></span></li>
+             
+             <li><p>经典案例</p> <span></span></li>
+            
+             <li><p>新闻资讯</p> <span></span></li>
+           
+             <li><p>关于我们</p> </li>
+           </ul> 
+ 
+           <div class="footer_">
+             <div class="phone1">
+               <img src="./img/pione.png"/>
+               <p>400-000-0000</p>
+             </div>
+             <div class="phone1" style="margin-left: 12px;">
+              <img src="./img/email.png"/>
+              <p>systek@126.com</p>
+            </div>
+           </div>
+ 
+           <div class="footer_n">
+             <p>公司地址：</p>
+             <div>
+               <p>北京市海淀区中关村东路66号1号楼21层2507-080(总公司)</p>
+               <p style="margin-top: 15px;">河南省郑州市高新区大学科技园1号楼1 5层1513(郑州分公司)</p>
+             </div>
+           </div>
+         </div>
+         <div class="pho">
+             <img src="./img/ewm.png"/>
+           </div>
+        </div>
+       
+         </div>
+        </div>
+       
+    
+    
+</div>
+<script src="./js/jquery.js"></script>
+<script src="./js/layui/layui.js"></script>
+
+
+<!-- <script src="./js/index.js"></script> -->
+<script src="./js/particles.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/swiper_min.js"></script>
+<script src="./js/dn.js"></script>
+<script>
+
+
+layui.use('element', function(){
+    var element = layui.element;
+    element.init();
+});
+
+    var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true,//可选选项，自动滑动
+    loop:true,
+    pagination: {
+    el: '.swiper-pagination',
+  },
+})
+
+
+$(window).scroll(function(){
+    var stance=$(this).scrollTop();
+    var heightAn=$(".big").height()
+    // console.log(stance,heightAn);
+//    console.log($(".big").height()) 
+if(stance>heightAn){
+    // console.log(123)
+    $(".layui-nav").addClass("chang");
+    $(".wchat").css("opacity","1");
+    $(".layui-nav .layui-nav-item a").css("color","black");
+    $(".layui-nav .layui-nav-child a").css("color","black");
+    // $(".layui-nav .layui-nav-more").css("border-top-color","black")
+    $(".layui-nav img").attr("src","./img/lo.png");
+    // $(".layui-nav .layui-nav-more").css("border-top-color","black");
+    // $(".layui-nav .layui-nav-mored").css("border-color","transparent transparent black")
+}else{
+
+
+    $(".layui-nav").removeClass("chang");
+    $(".wchat").css("opacity","0");
+    $(".layui-nav .layui-nav-item a").css("color","rgba(255,255,255,.7)");
+    $(".layui-nav .layui-nav-child a").css("color","black");
+    $(".layui-nav img").attr("src","./img/logo.png")
+}
+
+})
+
+$(".ha").on("mouseover",function(){
+    $(".glo").css("opacity","1")
+}).on("mouseout",function(){
+    $(".glo").css("opacity","0")
+})
+
+
+
+
+
+
+var myvideo = document.getElementById("myvideo");
+$(".handdle").on("click",function(){
+    $(".phot").hide();
+    $(".propa").show()
+    myvideo.play();
+    
+})
+</script>
+</body>
+</html>

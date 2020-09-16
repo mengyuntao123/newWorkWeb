@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.upda{
+    width: 100%;
+    height: 632px;
+    background: url("../img/pht/ceng.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up_c{
+    color: white;
+}
+.up_c .fg{
+    font-size: 50px;
+    text-align: center;
+}
+.up_c .eng{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 12px;
+}
+.newl{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.newl h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+}
+.newl p{
+    width: 100%;
+    margin-top: 15px;
+    line-height: 30px;
+    text-indent: 2em;
+    font-size: 16px;
+}
+.newl img{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.myContent{
+  width: 100%;
+  height: 300px;
+  background:#091928;
+  color: white;
+}
+.myContent ul{
+  list-style: none;
+  display: flex;
+}
+.myContent ul li{
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: space-around;
+}
+.myContent ul span{
+ display: inline-block;
+ width: 1px;
+ height: 12px;
+ background: white;
+}
+.my-r{
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.my-r p{
+   line-height: 25px;
+   font-size: 18px;
+}
+.myC-t{
+   width: 86%;
+   height: 300px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.footer_{
+   display: flex;
+}
+.phone1{
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+}
+.phone1 p{
+   margin-left: 6px;
+}
+.photo{
+    width: 36%;
+    margin-left: 121px;
+}
+.pho img{
+ width: 100px;
+}
+.footer_n{
+   display: flex;
+   font-size: 18px;
+}
+.layui-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .2);
+    background:rgba(32, 33, 36, .2) ;
+}
+
+.layui-nav *{
+    font-size: 16px;
+}
+.lit{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+.chang{
+    background: white;
+    /* background:rgba(55, 64, 92, .9) ; */
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .2);
+}
+.photo img{
+  width: 150px;
+}
+dd a{
+ text-align: center;
+ padding: 0px 8px !important;
+}
+@media screen and (max-width:1388px){
+    .layui-nav * {
+        font-size: 14px;
+    }
+}
